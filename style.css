@@ -1,0 +1,138 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.game-container {
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    left: 80px;
+}
+
+.border-left {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+}
+
+.border-right {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    left: 580px;
+}
+
+.border-top {
+    width: 660px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    top: -50;
+}
+
+.sky {
+    
+    width: 500px;
+    height: 580px;
+    position: absolute;
+}
+
+.sky-back{
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    filter: blur(3px);
+}
+
+.ground {
+    background: linear-gradient(#321,#333);
+    height: 150px;
+    width: 500px;
+    position: absolute;
+    top: 580px;
+    z-index: 1;
+}
+
+/* .ground-img{
+    height: 20px;
+    background-image: url(ground.png);
+    background-repeat: no-repeat;
+    height: 50%;
+    background-size: cover;
+}
+
+.rest {
+    background-color: white;
+} */
+
+.bird {
+    /* background-color: yellow; */
+    width: 55px;
+    height: 35px; 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bird1{
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    margin-bottom: 0px;
+    
+}
+
+.passive {
+    width: 0px;
+    height: 0px;
+    
+}
+
+.bird2 {
+    width: 0px;
+    height: 0px;
+    
+}
+
+.active {
+    width: 60px;
+    height: 70px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.obstacle {
+    background-image: url('pipe.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    width: 60px;
+    height: 300px;
+    position: absolute;
+    border-radius: 10%;
+}
+.top-obstacle {
+    background-image: url('pipe.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    transform: rotate(180);
+    width: 60px;
+    height: 300px;
+    position: absolute;
+    border-radius: 10%;
+}
